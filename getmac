@@ -1,13 +1,14 @@
 #!/python
-import pprint
 import requests
 mac_url = 'http://macvendors.co/api/%s'
 mac_address = input('Please enter a MAC address:n format of 00:00:00:00:00 : ')
-mac = requests.get(mac_url % mac_address)
-#pprint.pprint(mac.json())
-print('#################################')
-print('MAC_address = {}'.format(mac_address))
-print('Company Name: {} '.format(mac.json()['result']['company']))
-print('Company Address: {} '.format(mac.json()['result']['address']))
-print('#################################')
-
+try:
+  mac = requests.get(mac_url % mac_address)
+  print('#################################')
+  print('MAC_address = {}'.format(mac_address))
+  print('Company Name: {} '.format(mac.json()['result']['company']))
+  print('Company Address: {} '.format(mac.json()['result']['address']))
+  print('#################################')
+except:
+  print('No found or error in MAC formate')
+  
