@@ -14,3 +14,10 @@ Company Name: XEROX CORPORATION
 Company Address: M/S 105-50C,WEBSTER  NY  14580,US
 
 #################################
+
+Note: To run this program in docker environment use following steps
+
+
+docker build -t mynewapp .
+
+docker run mynewapp
