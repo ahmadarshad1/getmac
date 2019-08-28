@@ -8,7 +8,9 @@ Please enter a MAC address:n format of 00:00:00:00:00 : 00:00:00:00:00:00
 #################################
 
 MAC_address = 00:00:00:00:00:00
+
 Company Name: XEROX CORPORATION 
+
 Company Address: M/S 105-50C,WEBSTER  NY  14580,US
 
 #################################
